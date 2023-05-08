@@ -16,7 +16,7 @@ namespace WindowsFormsApp2
         {
             InitializeComponent();
         }
-
+        
         private void button1_Click(object sender, EventArgs e)
         {
             label2.Text = "Button 1 clicked!";
@@ -45,6 +45,11 @@ namespace WindowsFormsApp2
         private void radioButton3_CheckedChanged(object sender, EventArgs e)
         {
             label3.Text = "Radio Button 3 is selected!";
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            label5.Text = comboBox1.Text + " Option 1 is selected!";
         }
     }
 }
